@@ -1,6 +1,6 @@
 import 'package:first_app/models/quiz_question.dart';
 
-List<QuizQuestion> questions = [
+const questions = [
   QuizQuestion(
     'What are the main building blocks of Flutter UIs?',
     [
