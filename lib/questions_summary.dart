@@ -30,6 +30,7 @@ class QuestionsSummary extends StatelessWidget {
                       )),
                   Expanded(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(data['question'] as String),
                         Text(data['correct_answer'] as String),
