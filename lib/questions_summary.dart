@@ -15,13 +15,17 @@ class QuestionsSummary extends StatelessWidget {
               Container(
                   width: 35,
                   height: 35,
-                  decoration: const BoxDecoration(
-                    color: Colors.white,
+                  decoration: BoxDecoration(
+                    color: data['correct_answer'] == data['user_answer']
+                        ? const Color.fromARGB(255, 5, 81, 8)
+                        : const Color.fromARGB(255, 205, 128, 122),
                     shape: BoxShape.circle,
                   ),
                   alignment: Alignment.center,
-                  child:
-                      Text(((data['question_index'] as int) + 1).toString())),
+                  child: Text(
+                    ((data['question_index'] as int) + 1).toString(),
+                    style: const TextStyle(color: Colors.white),
+                  )),
               Expanded(
                 child: Column(
                   children: [
