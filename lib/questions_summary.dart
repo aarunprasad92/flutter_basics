@@ -11,7 +11,7 @@ class QuestionsSummary extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: summaryData.map((data) {
-            return Row(children: [
+            return Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Container(
                   width: 35,
                   height: 35,
