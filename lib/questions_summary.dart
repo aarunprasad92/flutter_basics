@@ -28,6 +28,9 @@ class QuestionsSummary extends StatelessWidget {
                         ((data['question_index'] as int) + 1).toString(),
                         style: const TextStyle(color: Colors.white),
                       )),
+                  const SizedBox(
+                    width: 10,
+                  ),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
